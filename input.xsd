@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://dom.com.java.xml.parser/entity"
+	xmlns:tns="http://dom.com.java.xml.parser/entity">
+
+	<element name="Cars">
+		<complexType>
+			<sequence>
+				<element name="Car" type="tns:Car" minOccurs="1"
+					maxOccurs="unbounded" />
+			</sequence>
+		</complexType>
+	</element>
+
+	<complexType name="Car">
+		<sequence>
+			<element name="Model" type="token" />
+			<element name="Color" type="token" />
+			<element name="Wheel" type="tns:Wheel" />
+			<element name="Engine" type="tns:Engine" />
+			<element name="Type" type="tns:Type" />
+			<element name="Price">
+				<simpleType>
+					<restriction base="decimal">
+						<fractionDigits value="2"/>
+						<totalDigits value="4"/>
+						<minExclusive value="0"/>
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+		<attribute name="Brand" type="tns:Brand" use="optional" />
+		<attribute name="id" use="required">
+			<simpleType>
+				<restriction base="int">
+					<minExclusive value="0"/>
+				</restriction>
+			</simpleType>
+		</attribute>
+	</complexType>
+
+	<simpleType name="Type">
+		<restriction base="token">
+			<enumeration value="gasoline"/>
+			<enumeration value="nuclear"/>
+			<enumeration value="electricity"/>
+			<pattern value="gasoline|nuclear|electricity" />
+		</restriction>
+	</simpleType>
+
+	<simpleType name="Brand">
+		<restriction base="token">
+			<pattern value="Audi|BMW|Toyota|Kia" />
+		</restriction>
+	</simpleType>
+
+	<complexType name="Wheel">
+		<sequence>
+			<element name="Tire" type="token" />
+
+			<element name="Position">
+				<simpleType>
+					<restriction base="token">
+						<minLength value="3"/>
+						<maxLength value="10"/>
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="Diameter">
+				<simpleType>
+					<restriction base="int">
+						<minExclusive value="0" />
+					</restriction>
+				</simpleType>
+			</element>
+		</sequence>
+	</complexType>
+
+	<complexType name="Engine">
+		<all>
+			<element name="Power" minOccurs="0">
+				<simpleType>
+					<restriction base="int">
+						<minInclusive value="0" />
+						<maxInclusive value="60" />
+					</restriction>
+				</simpleType>
+			</element>
+
+			<element name="Run" type="boolean" minOccurs="0"/>
+
+			<element name="Fuel" minOccurs="0">
+				<simpleType>
+					<restriction base="int">
+						<minInclusive value="0" />
+					</restriction>
+				</simpleType>
+			</element>
+		</all>
+	</complexType>
+</schema>

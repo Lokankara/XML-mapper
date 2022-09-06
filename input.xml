@@ -1,0 +1,91 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<tns:Cars
+		xmlns:tns="http://dom.com.java.xml.parser/entity"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://dom.com.java.xml.parser/entity input.xsd">
+
+	<Car id="1" Brand="Audi">
+		<Model>A3</Model>
+		<Color>Silver</Color>
+		<Wheel>
+			<Tire>Summer</Tire>
+			<Position>Front</Position>
+			<Diameter>22</Diameter>
+		</Wheel>
+		<Engine>
+			<Power>20</Power>
+			<Fuel>80</Fuel>
+			<Run>true</Run>
+		</Engine>
+		<Type>electricity</Type>
+		<Price>15.59</Price>
+	</Car>
+
+	<Car id="2" Brand="Toyota">
+		<Model>C-HR</Model>
+		<Color>White</Color>
+		<Wheel>
+			<Tire>Winter</Tire>
+			<Position>Rear</Position>
+			<Diameter>22</Diameter>
+		</Wheel>
+		<Engine>
+			<Power>27</Power>
+			<Fuel>105</Fuel>
+			<Run>false</Run>
+		</Engine>
+		<Type>electricity</Type>
+		<Price>12.79</Price>
+	</Car>
+
+	<Car id="3" Brand="BMW">
+		<Model>X5</Model>
+		<Color>Red</Color>
+		<Wheel>
+			<Tire>Winter</Tire>
+			<Position>Front</Position>
+			<Diameter>22</Diameter>
+		</Wheel>
+		<Engine>
+			<Fuel>60</Fuel>
+			<Power>22</Power>
+			<Run>true</Run>
+		</Engine>
+		<Type>nuclear</Type>
+		<Price>16.49</Price>
+	</Car>
+
+	<Car id="4" Brand="Kia">
+		<Model>SportAge</Model>
+		<Color>Violet</Color>
+		<Wheel>
+			<Tire>Summer</Tire>
+			<Position>Front</Position>
+			<Diameter>24</Diameter>
+		</Wheel>
+		<Engine>
+			<Fuel>60</Fuel>
+			<Power>22</Power>
+			<Run>true</Run>
+		</Engine>
+		<Type>gasoline</Type>
+		<Price>20.99</Price>
+	</Car>
+
+	<Car id="5" Brand="BMW">
+		<Model>X6</Model>
+		<Color>Green</Color>
+		<Wheel>
+			<Tire>Winter</Tire>
+			<Position>Rear</Position>
+			<Diameter>24</Diameter>
+		</Wheel>
+		<Engine>
+			<Fuel>60</Fuel>
+			<Power>22</Power>
+			<Run>true</Run>
+		</Engine>
+		<Type>gasoline</Type>
+		<Price>20.99</Price>
+	</Car>
+</tns:Cars>

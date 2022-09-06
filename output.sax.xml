@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tns:Cars xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dom.com.java.xml.parser/entity input.xsd" xmlns:tns="http://dom.com.java.xml.parser/entity">
+    <Car Brand="Audi" id="1">
+        <Model>A3</Model>
+        <Color>Silver</Color>
+        <Wheel>
+            <Tire>Summer</Tire>
+            <Position>Front</Position>
+            <Diameter>22</Diameter>
+        </Wheel>
+        <Engine>
+            <Power>20</Power>
+            <Run>true</Run>
+            <Fuel>80</Fuel>
+        </Engine>
+        <Type>electricity</Type>
+        <Price>15.59</Price>
+    </Car>
+    <Car Brand="Toyota" id="2">
+        <Model>C-HR</Model>
+        <Color>White</Color>
+        <Wheel>
+            <Tire>Winter</Tire>
+            <Position>Rear</Position>
+            <Diameter>22</Diameter>
+        </Wheel>
+        <Engine>
+            <Power>27</Power>
+            <Run>false</Run>
+            <Fuel>105</Fuel>
+        </Engine>
+        <Type>electricity</Type>
+        <Price>12.79</Price>
+    </Car>
+    <Car Brand="BMW" id="3">
+        <Model>X5</Model>
+        <Color>Red</Color>
+        <Wheel>
+            <Tire>Winter</Tire>
+            <Position>Front</Position>
+            <Diameter>22</Diameter>
+        </Wheel>
+        <Engine>
+            <Power>22</Power>
+            <Run>true</Run>
+            <Fuel>60</Fuel>
+        </Engine>
+        <Type>nuclear</Type>
+        <Price>16.49</Price>
+    </Car>
+    <Car Brand="Kia" id="4">
+        <Model>SportAge</Model>
+        <Color>Violet</Color>
+        <Wheel>
+            <Tire>Summer</Tire>
+            <Position>Front</Position>
+            <Diameter>24</Diameter>
+        </Wheel>
+        <Engine>
+            <Power>22</Power>
+            <Run>true</Run>
+            <Fuel>60</Fuel>
+        </Engine>
+        <Type>gasoline</Type>
+        <Price>20.99</Price>
+    </Car>
+    <Car Brand="BMW" id="5">
+        <Model>X6</Model>
+        <Color>Green</Color>
+        <Wheel>
+            <Tire>Winter</Tire>
+            <Position>Rear</Position>
+            <Diameter>24</Diameter>
+        </Wheel>
+        <Engine>
+            <Power>22</Power>
+            <Run>true</Run>
+            <Fuel>60</Fuel>
+        </Engine>
+        <Type>gasoline</Type>
+        <Price>20.99</Price>
+    </Car>
+</tns:Cars>
